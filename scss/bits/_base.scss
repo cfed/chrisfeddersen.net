@@ -4,6 +4,7 @@
 
 body {
 	background-color: #F4F4F5;
+	font-family: $brand-face;
 	color: $color-delta;
 	height: 100%;
 }
@@ -15,5 +16,5 @@ a {
 	}
 }
 .wrapper {
-	padding: $half-spacing-unit;
+	
 }

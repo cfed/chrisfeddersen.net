@@ -6,10 +6,11 @@
 	background-color: $color-beta;
 	border-bottom: 1px solid darken($color-beta, 10%);
 	color: $color-gamma;
+	margin: 0;
 	padding: $half-spacing-unit / 2;
 }
 .logo {
-	font-size: $h4-size;
+	font-size: $h5-size;
 	margin: 0;
 	> a {
 		color: $color-gamma;

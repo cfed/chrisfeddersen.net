@@ -7,20 +7,23 @@
 		color: $color-delta;
 		line-height: 1.2;
 	}
+	h1 {
+		color: $color-beta;
+		margin-bottom: $half-spacing-unit / 2;
+		text-align: center;
+	}
+	h3 {
+		margin-bottom: $half-spacing-unit;
+	}
 }
 .post__header {
-	margin: $half-spacing-unit;
-}
-.post__sub-header {
-	margin-bottom: $half-spacing-unit;
-}
-.post__title {
-	margin-bottom: $half-spacing-unit / 2;
-	text-align: center;
+	background-color: #444;
+	padding: $base-spacing-unit*2 $half-spacing-unit;
 }
 .post__date {
-	color: $color-gamma;
+	color: $color-beta;
 	font-size: $milli-size;
+	margin: 0;
 	text-align: center;
 }
 .post__content {
