@@ -118,8 +118,8 @@ $giga-size:         96px!default;
 $mega-size:         72px!default;
 $kilo-size:         48px!default;
 
-$h1-size:           36px!default; // .alpha
-$h2-size:           30px!default; // .beta
+$h1-size:           32px!default; // .alpha
+$h2-size:           28px!default; // .beta
 $h3-size:           24px!default; // .gamma
 $h4-size:           20px!default; // .delta
 $h5-size:           16px!default; // .epsilon
@@ -192,7 +192,7 @@ $color-delta: #999;
 $use-grids:         true!default;
 $use-flexbox:       false!default;
 $use-columns:       false!default;
-$use-nav:           false!default;
+$use-nav:           true!default;
 $use-options:       false!default;
 $use-pagination:    false!default;
 $use-breadcrumb:    false!default;

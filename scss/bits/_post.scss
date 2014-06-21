@@ -8,15 +8,26 @@
 		line-height: 1.2;
 	}
 }
-.post__title {
+.post__header {
+	margin: $half-spacing-unit;
+}
+.post__sub-header {
 	margin-bottom: $half-spacing-unit;
+}
+.post__title {
+	margin-bottom: $half-spacing-unit / 2;
 	text-align: center;
 }
 .post__date {
 	color: $color-gamma;
+	font-size: $milli-size;
 	text-align: center;
 }
 .post__content {
 	background-color: $color-beta;
-	padding: $half-spacing-unit;
+	font-size: $h6-size;
+	padding: $base-spacing-unit;
+	p:last-child {
+		margin-bottom: 0;
+	}
 }

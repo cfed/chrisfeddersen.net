@@ -1,0 +1,10 @@
+/*------------------------------------*\
+	CODE
+\*------------------------------------*/
+
+pre {
+	background-color: $color-gamma;
+	border: 1px solid darken($color-gamma, 5%);
+	color: #555;
+	padding: $half-spacing-unit;
+}
