@@ -326,3 +326,7 @@ $lap-end:               $desk-start - 1px;
     }
 
 }
+
+@mixin subtle-hover() {
+    transition: hover 0.5s ease;
+}

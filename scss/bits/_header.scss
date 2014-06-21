@@ -1,0 +1,20 @@
+/*------------------------------------*\
+	HEADER
+\*------------------------------------*/
+
+.main-header {
+	background-color: $color-beta;
+	color: $color-gamma;
+	padding: $half-spacing-unit;
+}
+.logo {
+	font-size: $h4-size;
+	margin: 0;
+	> a {
+		color: $color-gamma;
+			&:hover {
+				color: darken($color-gamma, 10%);
+			}
+		text-decoration: none;
+	}
+}
