@@ -39,6 +39,7 @@
  * Grid wrapper
  */
 .grid{
+    @extend .cf;
     margin-left:-$base-spacing-unit;
     list-style:none;
     margin-bottom:0;
@@ -57,10 +58,8 @@
      * Grid
      */
     .grid__item{
-        display:inline-block;
-        width:100%;
+       float:left;
         padding-left:$base-spacing-unit;
-        vertical-align:top;
         @if $global-border-box == false{
             @include vendor(box-sizing, border-box);
         }

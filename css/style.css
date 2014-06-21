@@ -856,7 +856,7 @@ textarea:focus {
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-.cf:after {
+.cf:after, .grid:after {
   content: "";
   display: table;
   clear: both; }
@@ -1664,10 +1664,8 @@ label,
  * Grid
  */
 .grid__item {
-  display: inline-block;
-  width: 100%;
-  padding-left: 24px;
-  vertical-align: top; }
+  float: left;
+  padding-left: 24px; }
 
 /**
  * Style trumps; helper and brand classes
@@ -2650,6 +2648,6 @@ label,
     width: 1px !important; } }
 /* endif */
 body {
-  background-color: #cccccc; }
+  background-color: #bada55; }
 
 /*# sourceMappingURL=style.css.map */
