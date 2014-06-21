@@ -1,3 +1,14 @@
-h1 {
-	color: #bada55;
+@charset "UTF-8";
+/*------------------------------------*\
+	STYLE.CSS
+\*------------------------------------*/
+
+/**
+ * Setup
+ */
+@import "defaults";
+@import "inuit.css/inuit";
+
+body {
+	background-color: $base-ui-color;
 }
