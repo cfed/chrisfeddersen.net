@@ -1,4 +1,4 @@
-Chris Feddersen Blog
+chrisfeddersen.net
 ======
 Dev site of my personal blog
 
