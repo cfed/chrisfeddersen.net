@@ -180,6 +180,7 @@ $brand-round:        4px!default;
 $color-alpha: #F4F4F5;
 $color-beta: #FFF;
 $color-gamma: #CACBCB;
+$color-delta: #999;
 
 
 /*------------------------------------*\
@@ -195,7 +196,8 @@ $use-nav:           false!default;
 $use-options:       false!default;
 $use-pagination:    false!default;
 $use-breadcrumb:    false!default;
-$use-media:         false!default;
+$use-media:         true!default;
+$use-flag:          true!default;
 $use-marginalia:    false!default;
 $use-island:        false!default;
 $use-block-list:    false!default;
@@ -206,7 +208,7 @@ $use-link-complex:  false!default;
 $use-flyout:        false!default;
 $use-arrows:        false!default;
 $use-sprite:        false!default;
-$use-icon-text:     false!default;
+$use-icon-text:     true!default;
 $use-beautons:      false!default;
 $use-lozenges:      false!default;
 $use-rules:         false!default;

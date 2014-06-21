@@ -16,8 +16,37 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 <body>
-	<header class="main-header">
-		<h1 class="logo"><a href="/">chrisfeddersen.net</a></h1>
+	<header class="page-header">
+		<div class="flag">
+			<h1 class="flag__body  logo"><a href="/">chrisfeddersen.net</a></h1>
+			<div class="flag__image--rev">
+				<img src="http://placehold.it/40x40" alt="" />
+			</div>
+		</div>
 	</header>
+	<div class="wrapper">
+		<div class="grid">
+			<div class="grid__item">
+				<article class="post">
+					<header>
+						<h1 class="post__title">Working with dynamic content</h1>
+						<p class="post__date">Jun 21st, 2014</p>
+					</header>
+					<section class="post__content">
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<h3>Is there a chance the text could wrap?</h3>
+						<p>Ut enim ad minim veniam.</p>
+						<pre>
+							<code>code example</code>
+						</pre>
+						<p>We will need a <a href=# class="icon-text--rev">Link <i class="icon-text__icon">⬀</i></a> style</p>
+					</section>
+				</article>
+			</div>
+			<div class="grid__item"></div>
+		</div>
+	</div>
+	<footer class="page-footer">&copy; 2014 Chris Feddersen</footer>
 </body>
 </html>

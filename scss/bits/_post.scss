@@ -1,0 +1,22 @@
+/*------------------------------------*\
+	POST
+\*------------------------------------*/
+
+.post {
+	@include headings(1, 3){
+		color: $color-delta;
+		line-height: 1.2;
+	}
+}
+.post__title {
+	margin-bottom: $half-spacing-unit;
+	text-align: center;
+}
+.post__date {
+	color: $color-gamma;
+	text-align: center;
+}
+.post__content {
+	background-color: $color-beta;
+	padding: $half-spacing-unit;
+}

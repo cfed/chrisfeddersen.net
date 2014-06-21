@@ -2,10 +2,11 @@
 	HEADER
 \*------------------------------------*/
 
-.main-header {
+.page-header {
 	background-color: $color-beta;
+	border-bottom: 1px solid darken($color-beta, 10%);
 	color: $color-gamma;
-	padding: $half-spacing-unit;
+	padding: $half-spacing-unit / 2;
 }
 .logo {
 	font-size: $h4-size;
@@ -15,6 +16,7 @@
 			&:hover {
 				color: darken($color-gamma, 10%);
 			}
+		margin-left: $half-spacing-unit;
 		text-decoration: none;
 	}
 }

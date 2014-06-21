@@ -1,0 +1,74 @@
+@if $use-media == true{
+    
+/*------------------------------------*\
+		$FLAG
+\*------------------------------------*/
+
+/*
+ *
+ * Demo: jsfiddle.net/csswizardry/hErrh
+ */
+
+.flag {
+    display: table;
+    width: 100%;
+}
+
+    .flag__image,
+    .flag__image--rev,
+    .flag__body {
+        display: table-cell;
+        vertical-align: middle;
+
+        .flag--top & {
+            vertical-align: top;
+        }
+
+        .flag--bottom & {
+            vertical-align: bottom;
+        }
+
+    }
+
+    .flag__image {
+        padding-right: $base-spacing-unit;
+
+        /*
+        * Parent modifier to swing image left to right
+        * without change to markup
+        */
+        .flag--rev & {
+            padding-right: 0;
+            padding-left: $base-spacing-unit;
+        }
+
+    }
+
+    /*
+    * Needs to be after the flag__body in the markup
+    */
+    .flag__image--rev {
+        padding-right: 0;
+        padding-left: $base-spacing-unit;
+    }
+
+    .flag__image,
+    .flag__image--rev {
+        > img {
+            display: block;
+            max-width: none;
+        }
+    }
+
+    .flag__body {
+        width: 100%;
+    }
+
+    .islet .flag__image{
+        padding-right: $half-spacing-unit;
+    }
+    .islet .flag__image--rev{
+        padding-left: $half-spacing-unit;
+    }
+
+}//endif

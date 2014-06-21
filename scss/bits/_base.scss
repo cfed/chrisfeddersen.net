@@ -4,10 +4,16 @@
 
 body {
 	background-color: #F4F4F5;
+	color: #333;
 	height: 100%;
 }
 a {
+	color: $color-delta;
 	&:hover {
 		@include subtle-hover;
+		color: darken($color-delta, 10%);
 	}
+}
+.wrapper {
+	padding: $half-spacing-unit;
 }
