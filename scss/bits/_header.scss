@@ -3,9 +3,9 @@
 \*------------------------------------*/
 
 .page-header {
-	background-color: $color-beta;
-	border-bottom: 1px solid darken($color-beta, 10%);
-	color: $color-gamma;
+	background-color: $color-post-header-bg;
+	border-bottom: 1px solid darken($color-post-header-bg, 10%);
+	color: $color-content;
 	margin: 0;
 	padding: $half-spacing-unit / 2;
 }
@@ -13,9 +13,9 @@
 	font-size: $h5-size;
 	margin: 0;
 	> a {
-		color: $color-gamma;
+		color: $color-content;
 			&:hover {
-				color: darken($color-gamma, 10%);
+				color: darken($color-post-header, 10%);
 			}
 		margin-left: $half-spacing-unit;
 		text-decoration: none;

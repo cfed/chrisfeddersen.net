@@ -3,16 +3,17 @@
 \*------------------------------------*/
 
 body {
-	background-color: #F4F4F5;
+	background-color: $color-body;
 	font-family: $brand-face;
-	color: $color-delta;
+	font-weight: 300;
+	color: $color-body-copy;
 	height: 100%;
 }
 a {
-	color: $color-delta;
+	color: $color-post-header-bg;
 	&:hover {
 		@include subtle-hover;
-		color: darken($color-delta, 10%);
+		color: darken($color-post-header-bg, 10%);
 	}
 }
 .wrapper {
