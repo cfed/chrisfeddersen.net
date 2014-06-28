@@ -4,16 +4,17 @@
 
 .page-header {
 	background-color: $color-post-header-bg;
-	border-bottom: 1px solid darken($color-post-header-bg, 10%);
+	border-bottom: 1px solid $color-post-header;
 	color: $color-content;
 	margin: 0;
 	padding: $half-spacing-unit / 2;
 }
 .logo {
-	font-size: $h5-size;
+	font-size: $h4-size;
+	font-weight: 300;
 	margin: 0;
 	> a {
-		color: $color-content;
+		color: darken($color-post-header-bg, 20%);
 			&:hover {
 				color: darken($color-post-header, 10%);
 			}
