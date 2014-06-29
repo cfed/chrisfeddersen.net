@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .page-header {
-	background-color: $color-post-header-bg;
+	background-color: #3E3E3E;
 	border-bottom: 1px solid $color-post-header;
 	color: $color-content;
 	margin: 0;
@@ -14,9 +14,9 @@
 	font-weight: 300;
 	margin: 0;
 	> a {
-		color: darken($color-post-header-bg, 20%);
+		color: $color-content;
 			&:hover {
-				color: darken($color-post-header, 10%);
+				color: darken($color-content, 10%);
 			}
 		margin-left: $half-spacing-unit;
 		text-decoration: none;
