@@ -3,20 +3,18 @@
 \*------------------------------------*/
 
 .page-header {
-	background-color: #3E3E3E;
 	border-bottom: 1px solid $color-post-header;
-	color: $color-content;
 	margin: 0;
 	padding: $half-spacing-unit / 2;
 }
 .logo {
-	font-size: $h4-size;
+	font-size: $h6-size;
 	font-weight: 300;
 	margin: 0;
 	> a {
-		color: $color-content;
+		color: $color-gamma;
 			&:hover {
-				color: darken($color-content, 10%);
+				color: $color-delta;
 			}
 		margin-left: $half-spacing-unit;
 		text-decoration: none;

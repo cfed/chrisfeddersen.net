@@ -166,7 +166,7 @@ $close-quote:   null;
  * Brand stuff
  */
 $brand-color:       #4a8ec2!default;
-$brand-face:        "Open Sans", sans-serif!default;
+$brand-face:        "Source Sans Pro", "Times New Roman";
 
 /**
  * How big would you like round corners to be by default?
@@ -187,6 +187,10 @@ $color-cta: #FC5865; //red
 $color-body-copy: #0C171E; //black
 $color-subheader: #636363;
 
+$color-alpha: #FFF;
+$color-beta: #F6F6F6;
+$color-gamma: #3E3E3E;
+$color-delta: #52DBEB;
 
 /*------------------------------------*\
     $OBJECTS AND ABSTRACTIONS

@@ -7,17 +7,15 @@
 		line-height: 1.2;
 	}
 	h1 {
-		color: $color-post-header;
 		margin-bottom: $half-spacing-unit / 2;
 		text-align: center;
 	}
 	h3 {
-		color: $color-subheader;
 		margin-bottom: $half-spacing-unit;
 	}
 }
 .post__header {
-	background-color: $color-post-header-bg;
+	background-color: $color-alpha;
 	padding: $base-spacing-unit*2 $half-spacing-unit;
 }
 .post__date {
@@ -28,7 +26,7 @@
 }
 .post__content {
 	background-color: $color-content;
-	font-size: $h6-size;
+	font-size: $h5-size;
 	padding: $base-spacing-unit;
 	p:last-child {
 		margin-bottom: 0;
