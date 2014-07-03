@@ -4,31 +4,44 @@
 
 .post {
 	@include headings(1, 3){
-		line-height: 1.2;
+		font-weight: 900;
+		line-height: 1.1;
 	}
+	border-bottom: 1px solid $color-gamma;
 	h1 {
 		margin-bottom: $half-spacing-unit / 2;
 		text-align: center;
 	}
 	h3 {
-		margin-bottom: $half-spacing-unit;
+		margin-bottom: $base-spacing-unit;
 	}
 }
 .post__header {
-	background-color: $color-alpha;
+	border-bottom: 1px solid $color-gamma;
+	font-weight: 900;
 	padding: $base-spacing-unit*2 $half-spacing-unit;
 }
 .post__date {
-	color: $color-content;
-	font-size: $milli-size;
+	font-size: $h5-size;
+	font-weight: 400;
 	margin: 0;
 	text-align: center;
 }
 .post__content {
-	background-color: $color-content;
 	font-size: $h5-size;
 	padding: $base-spacing-unit;
 	p:last-child {
 		margin-bottom: 0;
 	}
+}
+.post__share {
+	border-bottom: 1px solid $color-gamma;
+	padding: $half-spacing-unit;
+}
+.btn--social {
+	border: 1px solid $color-gamma;
+	color: $color-gamma;
+	height: 44px;
+	line-height: 44px;
+	width: 44px;
 }

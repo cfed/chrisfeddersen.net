@@ -6,10 +6,10 @@
  * Very simple, pared-back, mobile-first, responsive nav.
  */
 $responsive-nav-hit-area:   44px;
-$responsive-nav-icon-size:  16px;
-$responsive-nav-color:      $color-post-header;
-$responsive-nav-background: darken($color-post-header-bg, 15%);
-$responsive-nav-borders:    $color-post-header;
+$responsive-nav-icon-size:  18px;
+$responsive-nav-color:      $color-gamma;
+$responsive-nav-background: $color-alpha;
+$responsive-nav-borders:    $color-gamma;
 
 /**
  * An element (`nav`) in which to house our dropdown.
@@ -102,7 +102,7 @@ $responsive-nav-borders:    $color-post-header;
 		list-style: none;
 		margin:  0;
 		padding: 0;
-		padding-top: $responsive-nav-hit-area;
+		padding-top: $responsive-nav-hit-area + $base-spacing-unit/4;
 		position: absolute;
 		top:   0;
 		left:  -250px + $responsive-nav-hit-area;
