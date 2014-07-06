@@ -4,26 +4,27 @@
 
 .btn {
 	border-radius: 50px;
-	border: 1px solid;
+	border: 3px solid;
 	font-weight: 900;
-	padding-right:3em;
-    padding-left: 3em;
 	text-transform: uppercase;
 	overflow: hidden;
 	position: relative;
 }
 .btn--primary {
-	background-color: $color-alpha;
-	border-color: $color-gamma;
-	color: $color-gamma;
+	background-color: $color-gamma;
+	border-color: darken($color-gamma, 5%);
+	color: $color-alpha;
 	&:hover {
-		background-color: darken($color-alpha, 5%);
+		background-color: lighten($color-gamma, 5%);
+		color: $color-alpha;
 	}
 }
 .btn--secondary {}
 .btn--tertiary {}
 
 .btn-arrow--right {
+	padding-right: 3em;
+    padding-left: 3em;
 	-webkit-transition: all 0.5s ease;
 	&:after {
 		content: '→';
@@ -37,4 +38,14 @@
 			left: 75%;
 		}
 	}
+}
+
+.btn--social {
+	@extend .btn--primary;
+	font-size: $milli-size;
+	height: 34px;
+	margin: 0 $half-spacing-unit/2;
+	line-height: 30px;
+	padding: 0;
+	width: 34px;
 }

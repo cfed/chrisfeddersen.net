@@ -21,19 +21,19 @@
 		<div class="flag">
 			<h1 class="flag__body  logo"><a href="/">chrisfeddersen.net</a></h1>
 			<div class="flag__image--rev">
-				<nav class="responsive-nav" id="js-responsive-nav">
-					<ul class="responsive-nav__list">
-						<li class="responsive-nav__item">
-							<a href="#" class="responsive-nav__link">Home</a>
+				<nav class="main-nav">
+					<ul class="nav">
+						<li>
+							<a href="#" class="btn  btn--primary">H</a>
 						</li>
-						<li class="responsive-nav__item">
-							<a href="#" class="responsive-nav__link">Blog</a>
+						<li>
+							<a href="#" class="btn  btn--primary">B</a>
 						</li>
-						<li class="responsive-nav__item">
-							<a href="#" class="responsive-nav__link">Portfolio</a>
+						<li>
+							<a href="#" class="btn  btn--primary">P</a>
 						</li>
-						<li class="responsive-nav__item">
-							<a href="#" class="responsive-nav__link">Contact</a>
+						<li>
+							<a href="#" class="btn  btn--primary">C</a>
 						</li>
 					</ul>
 				</nav>
@@ -49,18 +49,11 @@
 						<h1 class="post__title">Working with dynamic content</h1>
 						<p class="post__date">Jun 21st, 2014</p>
 					</header>
-					<div class="post__share">
-						<p class="flush  text--center">Share this post</p>
-						<ul class="nav  nav--banner  push-half--bottom">
-							<li><a href="#0" class="btn  btn--soft  btn--small  btn--social">t</a></li>
-							<li><a href="#0" class="btn  btn--soft  btn--small  btn--social">f</a></li>
-							<li><a href="#0" class="btn  btn--soft  btn--small  btn--social">G+</a></li>
-						</ul>
-					</div>
 					<section class="post__content">
 						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 						<h3 class="post__sub-header">Is there a chance the text could wrap?</h3>
+						<header class="code-header">CSS</header>
 						<pre>
 							<code>code example</code>
 						</pre>
@@ -68,12 +61,31 @@
 						<h3 class="post__sub-header">Handling vertical alignment</h3>
 						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-						<button class="btn  btn--primary  btn-arrow--right">Button</button>
+						<a href="#0" class="btn  btn--primary  btn-arrow--right">Button</a>
 					</section>
+					<div class="post__share">
+						<p class="flush  text--center">Share this post</p>
+						<ul class="nav  nav--banner  push-half--bottom">
+							<li>
+								<button href="#0" class="btn  btn--social">t</button>
+							</li>
+							<li>
+								<button href="#0" class="btn  btn--social">f</button>
+							</li>
+							<li>
+								<button href="#0" class="btn  btn--social">G+</button>
+							</li>
+						</ul>
+					</div>
 				</article>
 			</div>
 			<div class="grid__item  one-whole">
-				<div class="text--center">Advertising</div>
+				<div class="island">
+					<div class="media  ad-block">
+						<i class="media__img  ad-block__banner"></i>
+						<p class="media__body  milli  wrap-tight">Peak is the easy way to keep track of what everyone is working on</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -85,23 +97,5 @@
 			<li><a href=#>Email</a></li>
 		</ul>
 	</footer>
-	<script type="text/javascript">
-		/**
-		 * We need to add a class of `responsive-nav--open` to
-		 * `#js-responsive-nav` ONLY when the nav is clicked AND
-		 * when we’re on a viewport of less than `responsiveNavBreakpoint`.
-		 * It needs removing when someone re-clicks the nav icon, or
-		 * when the viewport no longer matches `responsiveNavBreakpoint`.
-		 */
-
-		var responsiveNav = document.getElementById('js-responsive-nav');
-		var responsiveNavBreakpoint = 720;
-
-		responsiveNav.addEventListener('click', function(){
-		    if(window.innerWidth < responsiveNavBreakpoint){
-		        responsiveNav.classList.toggle("responsive-nav--open");
-		    }
-		});
-	</script>
 </body>
 </html>

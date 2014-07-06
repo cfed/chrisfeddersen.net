@@ -7,7 +7,7 @@
 		font-weight: 900;
 		line-height: 1.1;
 	}
-	border-bottom: 1px solid $color-gamma;
+	border-bottom: 2px solid $color-gamma;
 	h1 {
 		margin-bottom: $half-spacing-unit / 2;
 		text-align: center;
@@ -17,7 +17,7 @@
 	}
 }
 .post__header {
-	border-bottom: 1px solid $color-gamma;
+	border-bottom: 2px solid $color-gamma;
 	font-weight: 900;
 	padding: $base-spacing-unit*2 $half-spacing-unit;
 }
@@ -28,6 +28,7 @@
 	text-align: center;
 }
 .post__content {
+	border-bottom: 2px solid $color-gamma;
 	font-size: $h5-size;
 	padding: $base-spacing-unit;
 	p:last-child {
@@ -35,13 +36,5 @@
 	}
 }
 .post__share {
-	border-bottom: 1px solid $color-gamma;
 	padding: $half-spacing-unit;
-}
-.btn--social {
-	border: 1px solid $color-gamma;
-	color: $color-gamma;
-	height: 44px;
-	line-height: 44px;
-	width: 44px;
 }

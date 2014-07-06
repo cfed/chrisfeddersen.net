@@ -11,6 +11,7 @@ Todo
 	- [ ] Post page
 	- [ ] Archive page
 	- [ ] Contact/About Page
+	- [ ] Project Timeline
 
 Blog Post ideas
 

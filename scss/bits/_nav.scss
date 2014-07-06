@@ -23,11 +23,15 @@ $responsive-nav-borders:    $color-gamma;
 	height: $responsive-nav-hit-area;
 	color: $responsive-nav-color;
 	background-color: $responsive-nav-background;
+	border: 2px solid $color-gamma;
 	overflow: hidden; /* [1] */
 	border-radius: 100px;
 	cursor: pointer;
 
-	border: 1px solid $color-gamma;
+	@include media-query(lap-and-up) {
+		border: none;
+	}
+
 
 	/**
 	 * Make the wrapper element lie horizontally on wider viewports.
@@ -38,7 +42,7 @@ $responsive-nav-borders:    $color-gamma;
 		width:  auto;
 		height: auto;
 		background: none;
-		color: $responsive-nav-background;
+		color: $color-gamma;
 	}
 
 	/**
@@ -60,7 +64,7 @@ $responsive-nav-borders:    $color-gamma;
 		/**
 		 * Remove the hamburger on wider viewports.
 		 */
-		@media screen and (min-width: 720px) {
+		@include media-query(lap-and-up) {
 			content: normal;
 			content: none;
 		}
@@ -85,7 +89,7 @@ $responsive-nav-borders:    $color-gamma;
 		 * Remove the cross on wider viewports.
 		 * We have to repeat this chunk because of limitations with Sass.
 		 */
-		@media screen and (min-width: 720px) {
+		@include media-query(lap-and-up) {
 			content: normal;
 			content: none;
 		}
@@ -105,7 +109,7 @@ $responsive-nav-borders:    $color-gamma;
 		padding: 0;
 		padding-top: $responsive-nav-hit-area + $base-spacing-unit/4;
 		position: absolute;
-		top:  -1px;
+		top:  -2px;
 		left:  -300px + $responsive-nav-hit-area;
 		background-color: $responsive-nav-background;
 		width: 300px;
@@ -116,7 +120,7 @@ $responsive-nav-borders:    $color-gamma;
 			 * Un-position the dropdown on larger viewports.
 			 * More nasty RWD undoing stuff :(
 			 */
-			@media screen and (min-width: 720px) {
+			@include media-query(lap-and-up) {
 				padding-top: 0;
 				position: static;
 				width: auto;
@@ -128,13 +132,15 @@ $responsive-nav-borders:    $color-gamma;
 	}
 
 		.responsive-nav__item {
-			border-top: 1px solid $responsive-nav-borders;
+			border-top: 2px solid $responsive-nav-borders;
 			float: left;
 			width: 50%;
 
-				@media screen and (min-width: 720px) {
+				@include media-query(lap-and-up) {
 					display: inline-block;
+					float: left;
 					border-top: none;
+					width: auto;
 				}
 
 		}
@@ -144,15 +150,11 @@ $responsive-nav-borders:    $color-gamma;
 			 * 2. Ensure that the link text is the same height as the trigger.
 			 */
 			.responsive-nav__link {
-				color: $responsive-nav-color;
+				color: $color-gamma;
 				display: block;
 				white-space: nowrap;
 
 				line-height: $responsive-nav-hit-area * 2; /* [2] */
 				text-align: center;
-
-				@media screen and (min-width: 720px) {
-					color: $responsive-nav-background;
-				}
 
 			}

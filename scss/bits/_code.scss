@@ -7,3 +7,10 @@ pre {
 	color: $color-alpha;
 	padding: 0 $half-spacing-unit;
 }
+
+.code-header {
+	border: 2px solid $color-gamma;
+	font-size: $milli-size;
+	font-weight: 900;
+	padding: $base-spacing-unit / 4;
+}
