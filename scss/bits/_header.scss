@@ -3,8 +3,7 @@
 \*------------------------------------*/
 
 .page-header {
-	background-color: $color-theta;
-	border-bottom: 2px solid $color-gamma;
+	background-color: darken($color-theta, 10%);
 	padding: 0;
 }
 .logo {
