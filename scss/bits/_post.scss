@@ -4,20 +4,24 @@
 
 .post {
 	@include headings(1, 3){
-		font-weight: 900;
 		line-height: 1.1;
 	}
 	border-bottom: 2px solid $color-gamma;
 	h1 {
+		font-weight: 900;
 		margin-bottom: $half-spacing-unit / 2;
 		text-align: center;
 	}
 	h3 {
+		color: $color-alpha;
+		font-weight: 600;
 		margin-bottom: $base-spacing-unit;
 	}
 }
 .post__header {
+	background-color: $color-alpha;
 	border-bottom: 2px solid $color-gamma;
+	color: $color-gamma;
 	font-weight: 900;
 	padding: $base-spacing-unit*2 $half-spacing-unit;
 }

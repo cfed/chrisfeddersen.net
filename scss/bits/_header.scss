@@ -3,20 +3,29 @@
 \*------------------------------------*/
 
 .page-header {
+	background-color: $color-theta;
 	border-bottom: 2px solid $color-gamma;
-	margin: 0;
-	padding: $half-spacing-unit / 2;
+	padding: 0;
 }
 .logo {
-	font-size: $h5-size;
+	font-size: $h6-size;
 	font-weight: 300;
 	margin: 0;
 	> a {
-		color: $color-gamma;
+		color: $color-alpha;
 			&:hover {
 				color: $color-delta;
 			}
 		margin-left: $half-spacing-unit;
 		text-decoration: none;
+	}
+}
+.main-nav {
+	margin: 0;
+	.main-nav__link {
+		@include size(44px);
+		line-height: 40px;
+		padding: 0;
+		text-align: center;
 	}
 }

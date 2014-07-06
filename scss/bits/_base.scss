@@ -3,14 +3,13 @@
 \*------------------------------------*/
 
 body {
-	background-color: $color-alpha;
+	background-color: $color-theta;
 	font-family: $brand-face;
 	font-weight: 400;
-	color: $color-gamma;
+	color: $color-beta;
 	height: 100%;
 }
 a {
-	color: lighten($color-gamma, 20%);
 	&:hover {
 		@include subtle-hover;
 		color: $color-delta;

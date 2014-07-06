@@ -10,17 +10,14 @@
 	overflow: hidden;
 	position: relative;
 }
-.btn--primary {
-	background-color: $color-gamma;
-	border-color: darken($color-gamma, 5%);
-	color: $color-alpha;
-	&:hover {
-		background-color: lighten($color-gamma, 5%);
-		color: $color-alpha;
-	}
-}
-.btn--secondary {}
-.btn--tertiary {}
+
+@include button-hover('primary', $color-gamma, $color-alpha);
+@include button-hover('secondary', $color-beta, $color-gamma);
+
+@include button-hover('highlight-alpha', $color-delta, darken($color-delta, 20%));
+@include button-hover('highlight-beta', $color-epsilon, darken($color-epsilon, 20%));
+@include button-hover('highlight-gamma', $color-zeta, darken($color-zeta, 20%));
+@include button-hover('highlight-delta', $color-eta, darken($color-eta, 20%));
 
 .btn-arrow--right {
 	padding-right: 3em;
