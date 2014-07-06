@@ -10,6 +10,7 @@ body {
 	height: 100%;
 }
 a {
+	color: $color-beta; 
 	&:hover {
 		@include subtle-hover;
 		color: $color-delta;
