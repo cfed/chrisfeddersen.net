@@ -1,0 +1,40 @@
+/*------------------------------------*\
+	BUTTON
+\*------------------------------------*/
+
+.btn {
+	border-radius: 50px;
+	border: 1px solid;
+	font-weight: 900;
+	padding-right:3em;
+    padding-left: 3em;
+	text-transform: uppercase;
+	overflow: hidden;
+	position: relative;
+}
+.btn--primary {
+	background-color: $color-alpha;
+	border-color: $color-gamma;
+	color: $color-gamma;
+	&:hover {
+		background-color: darken($color-alpha, 5%);
+	}
+}
+.btn--secondary {}
+.btn--tertiary {}
+
+.btn-arrow--right {
+	-webkit-transition: all 0.5s ease;
+	&:after {
+		content: '→';
+		position: absolute;
+		left: 120%;
+		top: 0;
+		-webkit-transition: all 0.5s ease;
+	}
+	&:hover {
+		&:after {
+			left: 75%;
+		}
+	}
+}

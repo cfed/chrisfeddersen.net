@@ -24,8 +24,10 @@ $responsive-nav-borders:    $color-gamma;
 	color: $responsive-nav-color;
 	background-color: $responsive-nav-background;
 	overflow: hidden; /* [1] */
-	border-radius: 3px;
+	border-radius: 100px;
 	cursor: pointer;
+
+	border: 1px solid $color-gamma;
 
 	/**
 	 * Make the wrapper element lie horizontally on wider viewports.
@@ -73,7 +75,6 @@ $responsive-nav-borders:    $color-gamma;
  */
 .responsive-nav--open {
 	overflow: visible;
-
 	/**
 	 * Change the hamburger to a cross when the nav is open.
 	 */    
@@ -104,10 +105,10 @@ $responsive-nav-borders:    $color-gamma;
 		padding: 0;
 		padding-top: $responsive-nav-hit-area + $base-spacing-unit/4;
 		position: absolute;
-		top:   0;
-		left:  -250px + $responsive-nav-hit-area;
+		top:  -1px;
+		left:  -300px + $responsive-nav-hit-area;
 		background-color: $responsive-nav-background;
-		width: 250px;
+		width: 300px;
 		border-radius: 3px;
 		z-index: -1; /* [1] */
 
@@ -128,6 +129,8 @@ $responsive-nav-borders:    $color-gamma;
 
 		.responsive-nav__item {
 			border-top: 1px solid $responsive-nav-borders;
+			float: left;
+			width: 50%;
 
 				@media screen and (min-width: 720px) {
 					display: inline-block;
@@ -144,9 +147,9 @@ $responsive-nav-borders:    $color-gamma;
 				color: $responsive-nav-color;
 				display: block;
 				white-space: nowrap;
-				padding-right: ($responsive-nav-hit-area - $responsive-nav-icon-size) / 2; /* [1] */
-				padding-left:  ($responsive-nav-hit-area - $responsive-nav-icon-size) / 2; /* [1] */
-				line-height: $responsive-nav-hit-area; /* [2] */
+
+				line-height: $responsive-nav-hit-area * 2; /* [2] */
+				text-align: center;
 
 				@media screen and (min-width: 720px) {
 					color: $responsive-nav-background;

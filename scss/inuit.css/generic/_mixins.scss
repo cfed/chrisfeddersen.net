@@ -328,5 +328,10 @@ $lap-end:               $desk-start - 1px;
 }
 
 @mixin subtle-hover() {
-    transition: hover 0.5s ease;
+    @include vendor(transition, all 0.5s ease);
+}
+
+@mixin size($width, $height: $width) {
+      width: $width;
+      height: $height;
 }

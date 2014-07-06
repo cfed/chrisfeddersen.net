@@ -10,10 +10,10 @@ body {
 	height: 100%;
 }
 a {
-	color: $color-delta;
+	color: lighten($color-gamma, 20%);
 	&:hover {
 		@include subtle-hover;
-		color: darken($color-delta, 10%);
+		color: $color-delta;
 	}
 }
 .wrapper {
