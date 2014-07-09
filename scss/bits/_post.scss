@@ -35,6 +35,12 @@
 	font-weight: 400;
 	margin: 0;
 	text-align: center;
+	@include media-query(lap-and-up) {
+		font-size: $h4-size;
+	}
+	@include media-query(desk) {
+		font-size: $h3-size;
+	}
 }
 .post__content {
 	border-bottom: 2px solid $color-gamma;
