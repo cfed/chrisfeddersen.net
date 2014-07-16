@@ -8,6 +8,8 @@
 	}
 	border-bottom: 2px solid $color-gamma;
 	h1 {
+		background-color: #96C5DC;
+		color: #25477D;
 		font-weight: 900;
 		margin-bottom: $half-spacing-unit / 2;
 		text-align: center;
@@ -19,31 +21,26 @@
 		}
 	}
 	h3 {
-		color: $color-alpha;
 		font-weight: 600;
 		margin-bottom: $base-spacing-unit;
 	}
 }
 .post__header {
-	background-color: $color-alpha;
-	border-bottom: 2px solid $color-gamma;
-	color: $color-gamma;
 	padding: $base-spacing-unit*2 $half-spacing-unit;
 }
 .post__date {
+	background-color: $color-header-start;
 	font-size: $h5-size;
 	font-weight: 400;
-	margin: 0;
+	padding: $half-spacing-unit;
 	text-align: center;
-	@include media-query(lap-and-up) {
-		font-size: $h4-size;
-	}
-	@include media-query(desk) {
-		font-size: $h3-size;
+	p {
+		margin: 0;
 	}
 }
 .post__content {
 	border-bottom: 2px solid $color-gamma;
+	background-color: $color-header-finish;
 	font-size: $h5-size;
 	padding: $base-spacing-unit;
 	p:last-child {

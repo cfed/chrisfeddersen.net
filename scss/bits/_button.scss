@@ -11,7 +11,7 @@
 	position: relative;
 }
 
-@include button-hover('primary', $color-gamma, $color-alpha);
+@include button-hover('primary', #E6E6E6, #6D6E71);
 @include button-hover('secondary', $color-beta, $color-gamma);
 
 @include button-hover('highlight-alpha', $color-delta, darken($color-delta, 20%));

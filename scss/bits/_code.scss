@@ -3,14 +3,17 @@
 \*------------------------------------*/
 
 pre {
-	background-color: $color-beta;
-	color: $color-alpha;
+	background-color: $color-header-start;
+	border: 2px solid $color-beta;
+	border-top: none;
+	color: $color-link;
 	padding: 0 $half-spacing-unit;
 }
 
 .code-header {
 	border: 2px solid $color-beta;
-	color: $color-alpha;
+	background-color: $color-highlight;
+	color: #009D53;
 	font-size: $milli-size;
 	font-weight: 900;
 	padding: $base-spacing-unit / 4;

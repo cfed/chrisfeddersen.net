@@ -3,7 +3,9 @@
 \*------------------------------------*/
 
 .page-header {
-	background-color: darken($color-theta, 10%);
+	background: linear-gradient(top, $color-header-start 0%, $color-header-finish 100%);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+	margin-bottom: $base-spacing-unit;
 	padding: 0;
 }
 .logo {
@@ -11,7 +13,7 @@
 	font-weight: 300;
 	margin: 0;
 	> a {
-		color: $color-alpha;
+		color: $color-body-copy;
 			&:hover {
 				color: $color-delta;
 			}
@@ -31,9 +33,11 @@
 .main-nav {
 	margin: 0;
 	.main-nav__link {
-		@include size(44px);
-		line-height: 40px;
+		color: $color-link;
+		font-size: $h6-size;
+		font-weight: 300;
 		padding: 0;
 		text-align: center;
+		text-decoration: none;
 	}
 }
