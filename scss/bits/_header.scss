@@ -18,6 +18,15 @@
 		margin-left: $half-spacing-unit;
 		text-decoration: none;
 	}
+	span {
+		display: none;
+		@include media-query(lap-and-up) {
+			display: inline;
+		}
+	}
+	@include media-query(lap-and-up) {
+		font-size: $h4-size;
+	}
 }
 .main-nav {
 	margin: 0;
