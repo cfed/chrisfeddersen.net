@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 .page-footer {
-	background-color: darken($color-theta, 10%);
+	background-color: $color-dark;
+	color: $color-light;
 	padding: $half-spacing-unit;
 }

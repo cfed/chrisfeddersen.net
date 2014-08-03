@@ -11,13 +11,7 @@
 	position: relative;
 }
 
-@include button-hover('primary', #E6E6E6, #6D6E71);
-@include button-hover('secondary', $color-beta, $color-gamma);
-
-@include button-hover('highlight-alpha', $color-delta, darken($color-delta, 20%));
-@include button-hover('highlight-beta', $color-epsilon, darken($color-epsilon, 20%));
-@include button-hover('highlight-gamma', $color-zeta, darken($color-zeta, 20%));
-@include button-hover('highlight-delta', $color-eta, darken($color-eta, 20%));
+@include button-hover('primary', $color-dark, $color-light);
 
 .btn-arrow--right {
 	padding-right: 3em;

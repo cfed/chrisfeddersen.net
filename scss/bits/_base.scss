@@ -3,16 +3,16 @@
 \*------------------------------------*/
 
 body {
-	background-color: $color-body-bg;
+	background-color: $color-light;
 	font-family: $brand-face;
 	font-weight: 400;
-	color: $color-body-copy;
+	color: $color-dark;
 	height: 100%;
 }
 a {
-	color: $color-beta; 
+	color: $color-highlight; 
 	&:hover {
 		@include subtle-hover;
-		color: $color-delta;
+		color: darken($color-highlight, 10%);
 	}
 }

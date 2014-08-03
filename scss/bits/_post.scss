@@ -6,10 +6,8 @@
 	@include headings(1, 3){
 		line-height: 1.1;
 	}
-	border-bottom: 2px solid $color-gamma;
+	border-bottom: 1px solid $color-dark;
 	h1 {
-		background-color: #96C5DC;
-		color: #25477D;
 		font-weight: 900;
 		margin-bottom: $half-spacing-unit / 2;
 		text-align: center;
@@ -29,9 +27,8 @@
 	padding: $base-spacing-unit*2 $half-spacing-unit;
 }
 .post__date {
-	background-color: $color-header-start;
-	font-size: $h5-size;
-	font-weight: 400;
+	font-size: $h3-size;
+	font-weight: 800;
 	padding: $half-spacing-unit;
 	text-align: center;
 	p {
@@ -39,8 +36,7 @@
 	}
 }
 .post__content {
-	border-bottom: 2px solid $color-gamma;
-	background-color: $color-header-finish;
+	border-bottom: 1px solid $color-dark;
 	font-size: $h5-size;
 	padding: $base-spacing-unit;
 	p:last-child {

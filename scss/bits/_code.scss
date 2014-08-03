@@ -11,9 +11,9 @@ pre {
 }
 
 .code-header {
-	border: 2px solid $color-beta;
-	background-color: $color-highlight;
-	color: #009D53;
+	border: 2px solid $color-dark;
+	background-color: $color-dark;
+	color: $color-light;
 	font-size: $milli-size;
 	font-weight: 900;
 	padding: $base-spacing-unit / 4;
