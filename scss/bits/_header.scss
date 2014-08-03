@@ -7,13 +7,22 @@
 	padding: 0;
 }
 .logo {
-	font-size: $h6-size;
-	font-weight: 300;
+	color: $color-dark;
+	font-family: 'Bree Serif';
+	font-size: $h1-size;
 	margin: 0;
+	text-align: center;
+	text-decoration: none;
 	> a {
-		color: $color-dark;
+		
+		
 		margin-left: $half-spacing-unit;
 		text-decoration: none;
+	}
+	p {
+		color: $color-subtle;
+		font-family: 'Open Sans';
+		font-size: 13px;
 	}
 	span {
 		display: none;
