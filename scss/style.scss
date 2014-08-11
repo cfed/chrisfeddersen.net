@@ -18,10 +18,14 @@
 @import "bits/header";
 @import "bits/footer";
 @import "bits/post";
-@import "bits/type";
 
 //temp
 @import "bits/ad";
 
+.placeholder {
+	background-color: #ddd;
+	height: 60px;
+	width: 60px;
+}
 
 
