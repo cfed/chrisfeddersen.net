@@ -52,12 +52,3 @@
 .post__share {
 	padding: $half-spacing-unit;
 }
-.container {
-	margin: auto;
-	@include media-query(lap-and-up) {
-		max-width: 660px;
-	}
-	@include media-query(desk) {
-		max-width: 800px;
-	}
-}

@@ -1,0 +1,14 @@
+/*------------------------------------*\
+	$MAJOR-NAV
+\*------------------------------------*/
+
+.main-nav {
+	width: 60%;
+	margin: auto;
+	@include media-query(lap) {
+		width: auto;
+	}
+	@include media-query(desk) {
+		width: 70%;
+	}
+}

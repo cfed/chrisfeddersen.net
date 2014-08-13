@@ -1,0 +1,18 @@
+/*------------------------------------*\
+	$LINK
+\*------------------------------------*/
+
+.base-link {
+	color: $color-dark;
+	text-decoration: none;
+	&:hover {
+		color: $color-subtle;
+	}
+}
+.base-link--button {
+	@extend .base-link;
+	&:hover {
+		background-color: $color-dark;
+		color: $color-light;
+	}
+}
