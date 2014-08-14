@@ -9,6 +9,18 @@
 		width: auto;
 	}
 	@include media-query(desk) {
-		width: 70%;
+		width: 40%;
+	}
+
+	li {
+		padding:$half-spacing-unit/2;
+	}
+
+	a {
+		padding:$half-spacing-unit/2;
+		margin:-$half-spacing-unit/2;
+	}
+	p {
+		line-height: 1.3;
 	}
 }

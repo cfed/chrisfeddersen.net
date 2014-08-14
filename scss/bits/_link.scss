@@ -9,8 +9,10 @@
 		color: $color-subtle;
 	}
 }
-.base-link--button {
-	@extend .base-link;
+
+.block-list__link {
+	color: $color-dark;
+	text-decoration: none;
 	&:hover {
 		background-color: $color-dark;
 		color: $color-light;
