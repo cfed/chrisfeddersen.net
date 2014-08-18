@@ -10,10 +10,8 @@
 	z-index: 5;
 }
 .logo {
-	background-color: $color-light;
 	display: inline-block;
 	color: $color-dark;
-
 	font-family: $brand-serif;
 	line-height: 1;
 	margin-bottom: $half-spacing-unit/2;
@@ -36,9 +34,14 @@
 }
 
 .job-title {
-	border-top: 1px solid $color-dark;
-	border-bottom: 1px solid $color-dark;
+	border-top: 1px solid $base-ui-color;
+	border-bottom: 1px solid $base-ui-color;
 	color: lighten($color-subtle, 20%);
-	font-size: 36px;
+	font-size: 16px;
+	margin: auto;
 	padding: $half-spacing-unit/2 0;
+	width: 60%;
+	@include media-query(desk) {
+		width: 40%;
+	}
 }

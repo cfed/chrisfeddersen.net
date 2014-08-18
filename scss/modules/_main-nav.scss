@@ -3,19 +3,14 @@
 \*------------------------------------*/
 
 .main-nav {
-	width: 60%;
 	margin: auto;
-	@include media-query(lap) {
-		width: auto;
-	}
+	width: 60%;
 	@include media-query(desk) {
 		width: 40%;
 	}
-
 	li {
 		padding:$half-spacing-unit/2;
 	}
-
 	a {
 		padding:$half-spacing-unit/2;
 		margin:-$half-spacing-unit/2;
