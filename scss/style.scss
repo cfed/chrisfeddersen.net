@@ -22,6 +22,7 @@
 @import "bits/post";
 @import "bits/fixed-panel";
 
+@import "bits/helper";
 /**
  * Modules
  */
@@ -31,10 +32,12 @@
 @import "bits/ad";
 
 .placeholder {
+	@include size(200px, 150px);
 	background-color: #ddd;
 	display: inline-block;
-	height: 60px;
-	width: 60px;
+	@include media-query(desk) {
+		@include size(400px, 300px);
+	}
 }
 
 

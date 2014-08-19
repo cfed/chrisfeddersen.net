@@ -5,4 +5,12 @@
 .page-footer {
 	border-top: 1px solid $base-ui-color;
 	padding: $base-spacing-unit 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	display: none;
+	@include media-query(lap-and-up) {
+		display: block;
+	}
 }

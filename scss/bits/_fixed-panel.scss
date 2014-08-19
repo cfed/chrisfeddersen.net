@@ -1,0 +1,21 @@
+/*------------------------------------*\
+	$FIXED-PANEL
+\*------------------------------------*/
+
+.fixed-panel {
+	background-color: $color-light;
+	border-right: 1px solid $base-ui-color;
+	position: relative;
+	@include media-query(lap-and-up) {
+		height: 100%;
+		width: 25%;
+		position: fixed;
+	}
+}
+.content-panel {
+	border-right: 1px solid $base-ui-color;
+	max-width: 1600px;
+	@include media-query(lap-and-up) {
+		padding-left: 25%;
+	}
+}

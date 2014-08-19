@@ -4,10 +4,7 @@
 
 .main-nav {
 	margin: auto;
-	width: 60%;
-	@include media-query(desk) {
-		width: 40%;
-	}
+	width: 180px;
 	li {
 		padding:$half-spacing-unit/2;
 	}
