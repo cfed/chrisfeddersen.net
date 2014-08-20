@@ -1,0 +1,16 @@
+/*------------------------------------*\
+	$BLOG-LIST
+\*------------------------------------*/
+
+.blog-list li {
+	padding: $base-spacing-unit;
+}
+.blog-list__item {
+	text-align: center;
+	@include media-query(lap-and-up) {
+		text-align: left;
+	}
+}
+.blog-list__excerpt {
+	text-align: left; 
+}

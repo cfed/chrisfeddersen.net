@@ -28,6 +28,13 @@
             vertical-align: bottom;
         }
 
+        .flag--responsive & {
+            @include media-query(palm) {
+                display: block;
+            }
+            
+        }
+
     }
 
     .flag__image {
@@ -57,6 +64,10 @@
         > img {
             display: block;
             max-width: none;
+        }
+
+        .flag--responsive & {
+            padding: 0;
         }
     }
 
