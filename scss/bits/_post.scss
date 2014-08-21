@@ -3,9 +3,6 @@
 \*------------------------------------*/
 
 .post {
-	@include headings(1, 3){
-		line-height: 1.1;
-	}
 	border-bottom: 1px solid $color-dark;
 	h1 {
 		font-weight: 900;

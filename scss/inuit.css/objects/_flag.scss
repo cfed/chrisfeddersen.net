@@ -29,7 +29,7 @@
         }
 
         .flag--responsive & {
-            @include media-query(palm) {
+            @include media-query(portable) {
                 display: block;
             }
             
@@ -67,7 +67,9 @@
         }
 
         .flag--responsive & {
-            padding: 0;
+            @include media-query(portable) {
+                padding: 0;
+            }
         }
     }
 

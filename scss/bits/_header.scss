@@ -3,11 +3,14 @@
 \*------------------------------------*/
 
 .page-header {
-	margin: $base-spacing-unit*2 0 $base-spacing-unit*3;
+	margin: $base-spacing-unit 0 $base-spacing-unit*2;
 	padding: 0;
 	position: relative;
 	text-align: center;
 	z-index: 5;
+	@include media-query(desk) {
+		margin: $base-spacing-unit*2 0 $base-spacing-unit*3;
+	}
 }
 .logo {
 	display: inline-block;

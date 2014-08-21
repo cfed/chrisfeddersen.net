@@ -36,9 +36,13 @@
 	@include size(200px, 150px);
 	background-color: #ddd;
 	display: inline-block;
-	@include media-query(desk) {
-		@include size(400px, 300px);
+
+	.blog-list__item & {
+		margin-bottom: $base-spacing-unit;
 	}
+}
+.placeholder--large {
+
 }
 
 

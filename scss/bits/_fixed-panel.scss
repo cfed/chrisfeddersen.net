@@ -8,14 +8,27 @@
 	position: relative;
 	@include media-query(lap-and-up) {
 		height: 100%;
-		width: 25%;
+		width: 33%;
 		position: fixed;
 	}
+	@include media-query(desk) {
+		width: 25%;
+	}
+	@include media-query(desk-wide) {
+		width: 20%;
+	}
+
 }
 .content-panel {
 	border-right: 1px solid $base-ui-color;
-	max-width: 1600px;
+	max-width: 1280px;
 	@include media-query(lap-and-up) {
+		padding-left: 33%;
+	}
+	@include media-query(desk) {
 		padding-left: 25%;
+	}
+	@include media-query(desk-wide) {
+		padding-left: 20%;
 	}
 }
