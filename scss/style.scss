@@ -37,6 +37,10 @@
 	background-color: #ddd;
 	display: inline-block;
 
+	@include media-query(desk-wide) {
+		@include size(400px, 300px);
+	}
+
 	.blog-list__item & {
 		margin-bottom: $base-spacing-unit;
 	}

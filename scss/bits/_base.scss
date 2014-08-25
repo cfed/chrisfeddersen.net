@@ -8,8 +8,20 @@ body {
 	color: $color-dark;
 	height: 100%;
 }
-h4 {
+h2 {
+	font-size: 20px;
+	line-height: 1.2;
 	margin-bottom: $half-spacing-unit;
+	@include media-query(lap) {
+		font-size: 24px;
+	}
+	@include media-query(desk) {
+		font-size: 36px;
+	}
+	@include media-query(desk-wide) {
+		font-size: 44px;
+		
+	}
 }
 a {
 	color: $color-highlight; 
@@ -25,6 +37,9 @@ p {
 	text-align: left;
 	font-size: $h5-size;
 	@include media-query(lap-and-up) {
+		font-size: $h4-size;
+	}
+	@include media-query(desk-wide) {
 		font-size: $h4-size;
 	}
 }
