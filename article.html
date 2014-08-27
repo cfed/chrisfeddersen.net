@@ -12,80 +12,126 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	</head>
 <body>
-	<header class="page-header">
-		<div class="container">
-			<div class="flag  islet  main-nav">
-				<h1 class="flag__body  logo"><a href="/">{c<span>hris</span>f<span>eddersen</span>.net}</a></h1>
-				<div class="flag__image--rev">
-					<a href="#" class="main-nav__link">Articles</a>
-				</div>
-				<div class="flag__image--rev">
-					<a href="#" class="main-nav__link">Work</a>
-				</div>
-				<div class="flag__image--rev">
-					<a href="#" class="main-nav__link">Resources</a>
-				</div>
-				<div class="flag__image--rev">
-					<a href="#" class="main-nav__link">Abouth</a>
-				</div>
-			</div>
-		</div>
-	</header>
 	<div class="wrapper">
-		<div class="grid">
-			<div class="grid__item  one-whole">
-				<article class="post">
-					<header class="post__header">
-						<div class="container">
-							<h1 class="post__title">Working with dynamic content</h1>
-						</div>
-					</header>
-					<div class="post__date">
-						<p>Jun 21st, 2014</p>
+		<section class="fixed-panel">
+			<header class="page-header">
+				<p class="wrap-tight  welcome-msg  flush--bottom  text--center"><i class="milli">Welcome to the personal site of</i></p>
+				<a href="/" class="logo">
+					<h1 class="flush">Chris</h1>
+					<h6>feddersen</h6>
+				</a>
+				<p class="job-title  text--center">Employed Designer</p>
+			</header>
+			<nav class="main-nav">
+				<ul class="block-list">
+					<li class="text--left">
+						<a href="#0" class="block-list__link">
+							<div class="flag__body">
+								<p class="milli  flush"><i>My Recent</i></p>
+								<h5 class="flush">Articles</h5>
+							</div>
+							<i class="flag__image--rev">→</i>
+						</a>
+					</li>
+					<li class="text--left">
+						<a href="#0" class="block-list__link">
+							<div class="flag__body">
+								<p class="milli  flush"><i>My portolio of</i></p>
+								<h5 class="flush">Work</h5>
+							</div>
+							<i class="flag__image--rev">→</i>
+						</a>
+					</li>
+					<li class="text--left">
+						<a href="#0" class="block-list__link">
+							<div class="flag__body">
+								<p class="milli  flush"><i>My favourite</i></p>
+								<h5 class="flush">Resources</h5>
+							</div>
+							<i class="flag__image--rev">→</i>
+						</a>
+					</li>
+					<li class="text--left">
+						<a href="#0" class="block-list__link">
+							<div class="flag__body">
+								<p class="milli  flush"><i>About this</i></p>
+								<h5 class="flush">Site</h5>
+							</div>
+							<i class="flag__image--rev">→</i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<footer class="page-footer">
+				<p class="zeta  text--center  flush">&copy; 2014 Chris Feddersen</p>
+				<p class="zeta  text--center"><a href="https://twitter.com/chrisfeddo">Twitter</a> • <a href="https://plus.google.com/u/0/109092386322897821774/posts">Google+</a> • <a href="https://github.com/cfed">Github</a></p>
+			</footer>
+		</section>
+		<section class="content-panel">
+			<article class="island">
+				<div class="flag  flag--top  flag--responsive">
+					<div class="flag__body">
+						<h2 class="mega">
+							<a href="article.html" class="base-link">Wrangling the wild brumby that is dynamic content</a>
+						</h2>
 					</div>
-					<section class="post__content">
-						<div class="container">
-							
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-							<h3 class="post__sub-header">Is there a chance the text could wrap?</h3>
-							<header class="code-header">CSS</header>
-							<pre>
-								<code>code example</code>
-							</pre>
-							<p>We will need a <a href=# class="icon-text--rev">Link <i class="icon-text__icon">⬀</i></a> style</p>
-							<h3 class="post__sub-header">Handling vertical alignment</h3>
-							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-							<a href="#0" class="btn  btn--primary  btn-arrow--right">Button</a>
-						</div>
-					</section>
-					<div class="post__share">
-						<p class="flush  text--center  milli">Share this post with your pals</p>
-						<ul class="nav  nav--banner  push-half--bottom">
-							<li>
-								<button href="#0" class="btn  btn--social">t</button>
-							</li>
-							<li>
-								<button href="#0" class="btn  btn--social">f</button>
-							</li>
-							<li>
-								<button href="#0" class="btn  btn--social">G+</button>
-							</li>
-						</ul>
+					<div class="flag__image--rev">
+						<div class="placeholder"></div>
 					</div>
-				</article>
-			</div>
+				</div>
+				<div class="flag  push--bottom">
+					<div class="flag__body">
+						<time class="flush"><i>August 14 2014</i></time>
+					</div>
+					<div class="flag__image--rev">
+						<div class="nowrap  ctr--alpha  text--center  islet--small  flush">Tag One</div>
+					</div>
+					<div class="flag__image--rev">
+						<div class="nowrap  ctr--alpha  text--center  islet--small  flush">Tag Two</div>
+					</div>
+				</div>
+				<aside>
+					<p class="gamma  intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repellat at soluta ab inventore iste velit incidunt unde nesciunt quisquam consequatur magni error, suscipit nemo consectetur non dolor tempora id!</p>
+				</aside>
+				<div class="content">
+					<p><span class="mega  float--left">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa facere quaerat quisquam iusto, modi aut quae in consectetur vero provident aliquid rem, maiores tempora eos quos totam, harum reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+					<p><span class="push--left">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Esse mollitia aliquam blanditiis ipsam perferendis vero officia, ea maxime odit alias cum, dignissimos iure distinctio odio excepturi quam assumenda et cupiditate.</p>
+				</div>
+			</article>
+		</section>
+
+		<div class="islet" style="display: none;">
+
+			<p class="milli  flush"><i>My Recent</i></p>
+			<h5>Case Studies</h5>
+			<div class="greybox  greybox--medium  push-half--bottom">2</div>
+
+			<p class="milli  flush"><i>My Essential</i></p>
+			<h5>Process & About</h5>
+			
+			<p class="zeta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestias enim quas consequatur delectus laborum eveniet, similique nesciunt. Tempora facilis porro, reiciendis repudiandae eligendi a, id? Unde soluta dolore, quis! <a href="#0">Read More</a></p>
+
+			<p class="milli  flush"><i>My Favourite</i></p>
+			<h5>Resources</h5>
+			<div class="greybox  greybox--medium  push-half--bottom">3</div>
+
+
+
+			<p class="milli  flush"><i>this year's</i></p>
+			<h4>Reading List</h4>
+			<dl class="split">
+				<dt class="split__title">Dust <i class="milli">Hugh Howey</i></dt>
+				<dd>★★★☆☆</dd>
+				<dt class="split__title">Shift <i class="milli">Hugh Howey</i></dt>
+				<dd>★★★☆☆</dd>
+				<dt class="split__title">Born To Run <i class="milli">Christopher McDougall</i></dt>
+				<dd>★★★☆☆</dd>
+			</dl>
 		</div>
 	</div>
-	<footer class="page-footer">
-		<p class="zeta  text--center  flush">&copy; 2014 Chris Feddersen</p>
-		<p class="zeta  text--center"><a href="https://twitter.com/chrisfeddo">Twitter</a> • <a href="https://plus.google.com/u/0/109092386322897821774/posts">Google+</a> • <a href="https://github.com/cfed">Github</a></p>
-	</footer>
 </body>
 </html>

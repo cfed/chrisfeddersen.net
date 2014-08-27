@@ -2,6 +2,16 @@
 	$HELPER
 \*------------------------------------*/
 
+//Aim to merge these into their own appropriate styles
 .wrap-tight {
 	line-height: 1.2 !important;
+}
+
+.nowrap {
+	white-space:nowrap;
+}
+
+.islet--small {
+	padding: $base-spacing-unit / 4;
+	margin-bottom: $base-spacing-unit;
 }

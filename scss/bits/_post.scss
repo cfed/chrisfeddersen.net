@@ -2,50 +2,7 @@
 	POST
 \*------------------------------------*/
 
-.post {
-	border-bottom: 1px solid $color-dark;
-	h1 {
-		font-weight: 900;
-		margin-bottom: $half-spacing-unit / 2;
-		text-align: center;
-		@include media-query(lap-and-up) {
-			font-size: 48px;
-		}
-		@include media-query(desk) {
-			font-size: 72px;
-		}
-	}
-	h3 {
-		font-weight: 600;
-		margin-bottom: $base-spacing-unit;
-	}
-}
-.post__header {
-	padding: $base-spacing-unit*2 $half-spacing-unit;
-}
-.post__date {
-	font-size: $h3-size;
-	font-weight: 800;
-	padding: $half-spacing-unit;
-	text-align: center;
-	p {
-		margin: 0;
-	}
-}
-.post__content {
-	border-bottom: 1px solid $color-dark;
-	font-size: $h5-size;
-	padding: $base-spacing-unit;
-	p:last-child {
-		margin-bottom: 0;
-	}
-	@include media-query(lap-and-up) {
-		font-size: $h4-size;
-	}
-	@include media-query(desk) {
-		font-size: $h3-size;
-	}
-}
-.post__share {
-	padding: $half-spacing-unit;
+.content {
+	max-width: 800px;
+	margin: auto;
 }

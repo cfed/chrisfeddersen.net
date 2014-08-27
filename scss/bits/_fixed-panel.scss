@@ -21,7 +21,7 @@
 }
 .content-panel {
 	border-right: 1px solid $base-ui-color;
-	max-width: 1600px;
+	max-width: 1500px;
 	@include media-query(lap-and-up) {
 		padding-left: 33%;
 	}
